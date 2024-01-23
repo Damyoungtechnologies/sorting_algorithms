@@ -1,11 +1,11 @@
 #include "sort.h"
 
 /**
- * swap_ints - Exchange the values of two integers in an array.
- * @a: Pointer to the first integer to be swapped.
- * @b: Pointer to the second integer to be swapped.
+ * swap_ints - Exchange two integers within an array.
+ * @a: The first integer to be swapped.
+ * @b: The second integer to be swapped.
  */
-:
+
 void swap_ints(int *a, int *b)
 {
 	int tmp;
@@ -14,15 +14,16 @@ void swap_ints(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
-
 /**
- * lomuto_partition - Rearrange a subset of an array of integer
- * @array: Pointer to the array of integers.
- * @size: Size of the array.
- * @left: Starting index of the subset to be ordered.
- * @right: Ending index of the subset to be ordered.
- * Return: The final partition index.
+ * lomuto_partition - Arrange a portion of an integer array
+ * @array: The array of integers.
+ * @size: The size of the array.
+ * @left: The starting index of the subset to organize.
+ * @right: The ending index of the subset to organize.
+ *
+ * Return: The ultimate partition index.
  */
+
 
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
@@ -51,12 +52,12 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 	return (above);
 }
 /**
- * lomuto_sort - Recursively implement the quicksort algorithm on an array.
- * @array: Pointer to the array of integers to be sorted.
- * @size: Size of the array.
- * @left: Starting index of the array partition to be ordered.
- * @right: Ending index of the array partition to be ordered.
- * Description: Uses the Lomuto partition scheme.
+ * lomuto_sort - Recursively implement the quicksort algorithm.
+ * @array: An array of integers to be sorted.
+ * @size: The size of the array.
+ * @left: The starting index of the array partition to arrange.
+ * @right: The ending index of the array partition to arrange.
+ * Description: Applies the Lomuto partition scheme for sorting.
  */
 
 void lomuto_sort(int *array, size_t size, int left, int right)
@@ -71,10 +72,10 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 	}
 }
 /**
- * quick_sort - Applies the quicksort algorithm
- * @array: Pointer to the array of integers.
- * @size: Size of the array.
- * Description: Uses the Lomuto partition scheme.
+ * quick_sort - Arrange an array of integers in ascending order
+ * @array: An array of integers to be sorted.
+ * @size: The size of the array.
+ * Description: Applies the Lomuto partition scheme.
  */
 
 void quick_sort(int *array, size_t size)
